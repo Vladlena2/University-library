@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Personal_Account_Fragment">
+
+    <!-- fragment_profile.xml -->
+
+    <!-- fragment_profile.xml -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Заголовок "Личный кабинет" -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Личный кабинет"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <!-- Секция "Данные студента" -->
+            <TextView
+                android:id="@+id/textViewStudentData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Данные пользователя"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Поле для отображения имени студента -->
+            <TextView
+                android:id="@+id/textViewStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+
+            <!-- Секция "Данные о читательском билете" -->
+            <TextView
+                android:id="@+id/textViewLibraryCardData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Читательский билет"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <!-- RecyclerView для отображения списка книг -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewBooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Секция "Данные студента" -->
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Заявки"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+
+            <!-- RecyclerView для отображения списка книг -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewApplications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
